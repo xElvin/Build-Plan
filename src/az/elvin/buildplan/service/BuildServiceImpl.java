@@ -36,7 +36,13 @@ public class BuildServiceImpl implements BuildService
     }
 
     @Override
-    public void updateUser(int userId, int floorId, int roomId) throws Exception
+    public int getUserCount(int roomId) throws Exception
+    {
+        return buildDao.getUserCount(roomId);
+    }
+
+    @Override
+    public void updateUser(int floorId, int roomId, int userId) throws Exception
     {
         buildDao.updateUser(floorId, roomId, userId);
     }

@@ -86,19 +86,15 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet
                 int userId = Integer.parseInt(request.getParameter("userId"));
                 User u = service.getUserById(userId);
                 request.setAttribute("u", u);
-                address = "WEB-INF/parseJsp/modalParse.jsp";
-            }
-
-
-            /*   GET Floors Combo   */
-
-            if (action.equalsIgnoreCase("getFloorsCombo"))
-            {
                 List<Floor> floors = service.getFloors();
                 request.setAttribute("floors", floors);
-                address = "WEB-INF/parseJsp/floorComboParse.jsp";
-            }
 
+                int floorId = Integer.parseInt(request.getParameter("floorId"));
+                List<Room> rooms = service.getRooms(floorId);
+                request.setAttribute("rooms", rooms);
+
+                address = "WEB-INF/parseJsp/modalParse.jsp";
+            }
 
 
             /*   GET ROOMS COMBO   */
@@ -122,10 +118,25 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet
                 int floorId = Integer.parseInt(request.getParameter("floorId"));
                 int roomId  = Integer.parseInt(request.getParameter("roomId"));
                 int userId  = Integer.parseInt(request.getParameter("userId"));
+                String message = "";
 
-                service.updateUser(floorId, roomId, userId);
+                int userCount = service.getUserCount(roomId);
+                System.out.println("count="+userCount);
 
-                address = "rooms.jsp";
+                if (userCount < 6)
+                {
+                    service.updateUser(floorId, roomId, userId);
+                    address = "rooms.jsp";
+                }
+                else
+                {
+                    System.out.println("Isci sayi maksdir!");
+                    message = "Room have max user!";
+                    request.setAttribute("message", message);
+                    address = "WEB-INF/parseJsp/modalParse.jsp";
+                }
+                //address = "rooms.jsp";
+
             }
 
         } catch (Exception exc)

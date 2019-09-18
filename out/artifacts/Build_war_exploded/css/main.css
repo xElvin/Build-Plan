@@ -1,14 +1,20 @@
 .hoverIndex{
     height: 250px;
     width: 250px;
-    border: 1px solid;
-    display: inline-block;
+    background-color: #337ab7;
+    display: block;
+    float: left;
     margin-right: 40px;
     margin-bottom: 30px;
 }
+.hoverIndex p {
+    color:white;
+}
 .hoverIndex:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #537097;
+    box-shadow: 1px 1px 9px 1px;
+    transition: all .3s;
 }
 
 
@@ -17,7 +23,6 @@
     padding: 1rem;
     height: 220px;
     width: 210px;
-    border: 1px solid;
     display: block;
     float: left;
     margin-right: 40px;

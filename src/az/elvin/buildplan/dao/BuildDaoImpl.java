@@ -235,16 +235,53 @@ public class BuildDaoImpl implements BuildDao
     }
 
     @Override
-    public void updateUser(int floorId, int roomId, int userId) throws Exception
+    public int getUserCount(int roomId) throws Exception
     {
         Connection         c = null;
         PreparedStatement ps = null;
-        String sql = "update buildplandb.users u set u.floor_id = ?, u.room_id = ? \n" +
-                    "where u.idusers = ?";
+        ResultSet         rs = null;
+        int count = 0;
+
+        String sql = "select count(idusers) as total from buildplandb.users where room_id = ? ";
+
         try
         {
             c = DBConnect.getConnection();
             if (c != null) {
+                ps = c.prepareStatement(sql);
+                ps.setInt(1, roomId);
+                rs = ps.executeQuery();
+
+                if (rs.next())
+                {
+                    count = rs.getInt("total");
+                }
+            }
+
+        } catch (Exception exc)
+        {
+            exc.printStackTrace();
+        }
+        finally
+        {
+            DBClose.dbClose(c, ps, rs);
+        }
+        return count;
+    }
+
+    @Override
+    public void updateUser(int floorId, int roomId, int userId) throws Exception
+    {
+        Connection         c = null;
+        PreparedStatement ps = null;
+
+        String sql = "update buildplandb.users u set u.floor_id = ?, u.room_id = ? \n" +
+                     "where u.idusers = ?";
+        try
+        {
+            c = DBConnect.getConnection();
+            if (c != null)
+            {
                 ps = c.prepareStatement(sql);
                 ps.setInt(1, floorId);
                 ps.setInt(2, roomId);

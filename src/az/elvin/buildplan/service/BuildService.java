@@ -12,5 +12,7 @@ public interface BuildService
     List<Room>  getRooms(int floorId)   throws Exception;
     List<User>  getUsers(int floorId)   throws Exception;
     User        getUserById(int userId) throws Exception;
+
+    int getUserCount(int roomId) throws Exception;
     void updateUser (int floorId, int roomId, int userId) throws Exception;
 }

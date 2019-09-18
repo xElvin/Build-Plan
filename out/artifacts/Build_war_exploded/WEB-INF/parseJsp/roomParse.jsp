@@ -9,12 +9,12 @@
 --%>
 <div id="roomParseId" style="margin-top: 7rem; margin-right: 15rem; margin-left: 18rem;">
     <c:forEach items="${rooms}" var="r" varStatus="Count">
-        <div id="${r.id}" class="hoverFloor btn-primary border border-info rounded shadow p-3 mb-5 bg-white rounded">
-            Room: ${r.name} <br>
+        <div id="${r.id}" class="hoverFloor hoverIndex border border-info rounded shadow p-3 mb-5 bg-white rounded">
+            <p>Room: ${r.name}</p>
                 <div style="box-sizing: border-box">
                     <c:forEach items="${users}" var="u" varStatus="Number">
                         <c:if test="${u.room.name == r.name}">
-                            <p id="personBtnId" onclick="callModal(${u.id})">${Number.count}. ${u.name} ${u.surname}</p>
+                            <p id="personBtnId" onclick="callModal(${u.id}, ${u.floor.id})">${Number.count}. ${u.name} ${u.surname}</p>
                         </c:if>
                     </c:forEach>
                 </div>

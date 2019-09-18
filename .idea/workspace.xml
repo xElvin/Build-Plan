@@ -6,7 +6,39 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6ef81c0-a56a-4863-a8b3-8f11db681b3b" name="Default" comment="" />
+    <list default="true" id="f6ef81c0-a56a-4863-a8b3-8f11db681b3b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/floorComboParse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/floorParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/floorParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/modalParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/modalParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomComboParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomComboParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/floorComboParse.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/floorParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/floorParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/modalParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/modalParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomComboParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomComboParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/main.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +54,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Build" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -36,21 +68,21 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/js/jquery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\web\META-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Elvin\IdeaProjects\Build\web\js\jquery" />
       <recent name="C:\Users\Elvin\IdeaProjects\Build" />
       <recent name="C:\Users\Elvin\IdeaProjects\Build\web" />
       <recent name="C:\Users\Elvin\IdeaProjects\Build\src\az\elvin\build" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\web\META-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,6 +357,8 @@
       <workItem from="1568620131117" duration="9263000" />
       <workItem from="1568637019586" duration="7905000" />
       <workItem from="1568698262500" duration="3437000" />
+      <workItem from="1568721183563" duration="16758000" />
+      <workItem from="1568785439015" duration="719000" />
     </task>
     <servers />
   </component>
@@ -336,7 +370,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

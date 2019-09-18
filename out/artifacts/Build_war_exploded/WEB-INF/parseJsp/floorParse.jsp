@@ -3,11 +3,13 @@
 
 <div id="containerDivId" style="margin-top: 7rem; margin-right: 22rem; margin-left:24rem;">
     <c:forEach items="${floors}" var="f" varStatus="Count">
-        <a href="rooms.jsp">
-            <div id="${f.id}" class="hoverIndex btn btn-primary border border-info rounded shadow p-3 mb-5 bg-white rounded"
+        <a href="rooms.jsp" style="text-decoration: none">
+            <div id="${f.id}" class="hoverIndex btn  border border-info rounded shadow p-3 mb-5 bg-white rounded"
                                         onclick="Cookies.set('floorId', ${f.id})">
-                <br>Mertebe ${f.name}<br> <br>
-                Otaqlarin sayi: 8 <br>
+               <p>
+                   <br>Mertebe ${f.name}<br> <br>
+                   Otaqlarin sayi: 8 <br>
+               </p>
             </div>
         </a>
     </c:forEach>

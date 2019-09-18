@@ -1,7 +1,7 @@
-function callModal(userId)
+function callModal(userId, floorId)
 {
     $('#userModalId').modal('show');
-    getUserById(userId);
+    getUserById(userId, floorId);
 }
 
 
@@ -64,13 +64,13 @@ function getRooms()
 
 
 
-function getUserById(userid)
+function getUserById(userid, floorid)
 {
     $.ajax({
         url: "cs?action=getUserById",
         type: 'GET',
         dataType: 'html',
-        data: 'userId='+userid,
+        data: 'userId='+userid+'&floorId='+floorid,
         success: function (data)
         {
             $('#userModalId').html(data);
@@ -83,7 +83,7 @@ function getUserById(userid)
 }
 
 
-function getFloorCombo()
+/*function getFloorCombo()
 {
     $.ajax({
         url: "cs?action=getFloorsCombo",
@@ -98,17 +98,17 @@ function getFloorCombo()
             alert('Have an error!');
         }
     })
-}
+}*/
 
 
 
-function getRoomCombo()
+function getRoomCombo(floorId)
 {
     $.ajax({
         url: "cs?action=getRoomsCombo",
         type: 'GET',
         dataType: 'html',
-        data: 'floorId='+Cookies.get('floorId'),
+        data: 'floorId='+floorId,
         success: function (data)
         {
             $('#userRoom').html(data);
@@ -127,19 +127,19 @@ function updateUser(userId)
     var floorId = $('#userFloor').val();
     var roomId  = $('#userRoom').val();
 
-    alert('flo='+floorId+' rom='+roomId+' user='+userId);
-    /*$.ajax({
+    //alert('flo='+floorId+' rom='+roomId+' user='+userId);
+    $.ajax({
         url: "cs?action=updateUser",
         type: 'POST',
         dataType: 'html',
         data: 'floorId='+floorId+'&roomId='+roomId+'&userId='+userId,
         success: function ()
         {
-            alert('User successfully updated!')
+            getRooms();
         },
         error: function ()
         {
             alert('Have an error!');
         }
-    })*/
+    })
 }
