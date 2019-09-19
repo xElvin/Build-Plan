@@ -21,8 +21,8 @@
 
 .hoverFloor{
     padding: 1rem;
-    height: 220px;
-    width: 210px;
+    height: 285px;
+    width: 230px;
     display: block;
     float: left;
     margin-right: 40px;
@@ -36,4 +36,10 @@
 }
 #personBtnId{
     cursor: pointer;
+}
+
+.room {
+    background-color: #234650;
+    font-size: large;
+    padding-left: 1rem;
 }

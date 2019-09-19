@@ -136,6 +136,7 @@ function updateUser(userId)
         success: function ()
         {
             getRooms();
+            $('#userModalId').modal('toggle');
         },
         error: function ()
         {

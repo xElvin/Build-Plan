@@ -121,17 +121,15 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet
                 String message = "";
 
                 int userCount = service.getUserCount(roomId);
-                System.out.println("count="+userCount);
 
-                if (userCount < 6)
+                if (userCount < 8)
                 {
                     service.updateUser(floorId, roomId, userId);
                     address = "rooms.jsp";
                 }
                 else
                 {
-                    System.out.println("Isci sayi maksdir!");
-                    message = "Room have max user!";
+                    message = "Room have a max user!";
                     request.setAttribute("message", message);
                     address = "WEB-INF/parseJsp/modalParse.jsp";
                 }
