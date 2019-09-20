@@ -9,14 +9,8 @@
     <list default="true" id="f6ef81c0-a56a-4863-a8b3-8f11db681b3b" name="Default" comment="final_1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,21 +41,25 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\web\META-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\web" />
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\src\az\elvin\buildplan" />
       <recent name="C:\Users\Elvin\IdeaProjects\Build\web\js\jquery" />
       <recent name="C:\Users\Elvin\IdeaProjects\Build" />
       <recent name="C:\Users\Elvin\IdeaProjects\Build\web" />
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\src\az\elvin\build" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\web\META-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,7 +336,8 @@
       <workItem from="1568698262500" duration="3437000" />
       <workItem from="1568721183563" duration="16758000" />
       <workItem from="1568785439015" duration="7363000" />
-      <workItem from="1568873464722" duration="2515000" />
+      <workItem from="1568873464722" duration="3113000" />
+      <workItem from="1568961482725" duration="4748000" />
     </task>
     <servers />
   </component>
