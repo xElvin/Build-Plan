@@ -19,4 +19,5 @@ public interface BuildService
 
     boolean reserve(Reserve r) throws Exception;
     List<Reserve> getReserve(int room_id) throws Exception;
+    List<Reserve> getReserves(int user_id, int room_id) throws Exception;
 }

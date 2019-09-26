@@ -215,7 +215,18 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet
                     }
                 }
 
-                address = "js/main.js";
+                address = "rooms.jsp";
+            }
+
+
+            else if (action.equalsIgnoreCase("getReserves"))
+            {
+                int user_id = Integer.parseInt(request.getParameter("user_id"));
+                int room_id = Integer.parseInt(request.getParameter("room_id"));
+
+                List<Reserve> reserves = service.getReserves(user_id, room_id);
+                request.setAttribute("reserves", reserves);
+                address = "WEB-INF/parseJsp/infoModalParse.jsp";
             }
 
         } catch (Exception exc)

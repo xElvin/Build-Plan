@@ -97,6 +97,31 @@ function reserve()
 }
 
 
+function getInfo(room_id)
+{
+    var user_id = Cookies.get('user_id');
+
+    $('#infoModalId').modal('show');
+
+    $.ajax({
+        url: 'cs?action=getReserves',
+        type: 'GET',
+        dataType: 'html',
+        data: 'user_id='+user_id+'&room_id='+room_id,
+        success: function (data)
+        {
+            $('#infoModalId').html(data);
+        },
+
+        error: function ()
+        {
+            alert('Have an error!')
+        }
+
+    })
+}
+
+
 
 function getFloor()
 {
@@ -226,10 +251,21 @@ function updateUser(userId)
         type: 'POST',
         dataType: 'html',
         data: 'floorId='+floorId+'&roomId='+roomId+'&userId='+userId,
-        success: function ()
+        success: function (data, status, xhr)
         {
-            getRooms();
-            $('#userModalId').modal('toggle');
+            var message = xhr.getResponseHeader('message');
+            if (message == 'updated')
+            {
+                alert('Successfully updated!');
+                getRooms();
+                $('#userModalId').modal('toggle');
+            }
+
+            else if (message == 'not updated')
+            {
+                alert('Room have a max user!');
+            }
+
         },
         error: function ()
         {

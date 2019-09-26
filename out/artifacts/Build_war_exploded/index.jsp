@@ -28,7 +28,7 @@
     <script type="text/javascript" src="js/jquery/jquery-ui.js"></script>
     <script type="text/javascript" src="js/jquery/bootstrap-clockpicker.js"></script>
     <script type="text/javascript" src="js/jquery/bootstrap-clockpicker.min.js"></script>
-    <%--<script type="text/javascript" src="js/jquery/clockpicker.js"></script>--%>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <script>
       Cookies.set('user_id', ${login.user_id})

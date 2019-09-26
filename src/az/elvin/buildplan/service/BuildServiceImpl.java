@@ -10,6 +10,8 @@ import az.elvin.buildplan.model.User;
 import java.util.List;
 
 public class BuildServiceImpl implements BuildService
+
+
 {
     private BuildDao buildDao = new BuildDaoImpl();
     @Override
@@ -58,5 +60,10 @@ public class BuildServiceImpl implements BuildService
     public List<Reserve> getReserve(int room_id) throws Exception
     {
         return buildDao.getReserve(room_id);
+    }
+
+    @Override
+    public List<Reserve> getReserves(int user_id, int room_id) throws Exception {
+        return buildDao.getReserves(user_id, room_id);
     }
 }

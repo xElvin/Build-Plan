@@ -30,6 +30,7 @@
     <script type="text/javascript" src="js/jquery/jquery-ui.js"></script>
     <script type="text/javascript" src="js/jquery/bootstrap-clockpicker.js"></script>
     <script type="text/javascript" src="js/jquery/bootstrap-clockpicker.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <script>
         $(function ()
@@ -56,7 +57,7 @@
         <div class="modal-content" style="height: 40rem">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Person add</h4>
+                <h4 class="modal-title">Reserve</h4>
             </div>
             <div class="modal-body">
                 <form method="post">
@@ -74,6 +75,48 @@
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="modal fade" id="infoModalId" role="dialog" style="display: none;" data-backdrop="static" data-keyboard="false">
+    <%--<div class="modal-dialog" style="width: 90rem; ">
+        <div class="modal-content" style="height: 50rem">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Reserves</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            <c:forEach begin="0" end="5" step="1" varStatus="loop">
+                                <tr>
+                                    <th scope="row">${loop.count}</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
+
+                        </table>
+                        &lt;%&ndash;<label for="SelectDay">Reserve ${loop.count}</label> <input type="text" id="SelectDay" class="datepicker form-control">&ndash;%&gt;
+                </form>
+            </div>
+
+        </div>
+    </div>--%>
 </div>
 
 </body>

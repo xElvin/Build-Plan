@@ -377,4 +377,50 @@ public class BuildDaoImpl implements BuildDao
         }
         return reserveList;
     }
+
+    @Override
+    public List<Reserve> getReserves(int user_id, int room_id) throws Exception {
+        List<Reserve> reserveList = new ArrayList<>();
+        Connection         c = null;
+        PreparedStatement ps = null;
+        ResultSet         rs = null;
+        String sql = "SELECT R.idreserve, R.date, R.start_time, R.end_time, R.person_count, O.name FROM buildplandb.reserve R\n" +
+                     "inner join buildplandb.room O on R.room_id = O.idroom\n" +
+                     "where R.user_id = ? and R.room_id = ? and R.active = 1 ";
+        try
+        {
+            c = DBConnect.getConnection();
+            if (c != null)
+            {
+                ps = c.prepareStatement(sql);
+                ps.setInt(1, user_id);
+                ps.setInt(2, room_id);
+                rs = ps.executeQuery();
+
+                while (rs.next())
+                {
+                    Reserve r = new Reserve();
+                    r.setId(rs.getInt("R.idreserve"));
+                    r.setDate(rs.getDate("R.date"));
+                    r.setStart_time(rs.getTime("R.start_time"));
+                    r.setEnd_time(rs.getTime("R.end_time"));
+                    r.setPerson_count(rs.getInt("R.person_count"));
+                    r.setRoom_name(rs.getString("O.name"));
+
+                    reserveList.add(r);
+                }
+            }
+            else
+            {
+                System.out.println("Connection is null!");
+            }
+        } catch (Exception ex)
+        {
+            ex.printStackTrace();
+        } finally
+        {
+            DBClose.dbClose(c, ps, rs);
+        }
+        return reserveList;
+    }
 }

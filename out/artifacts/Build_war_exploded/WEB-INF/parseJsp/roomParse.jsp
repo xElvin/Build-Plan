@@ -12,7 +12,11 @@
         <div id="${r.id}" class="hoverFloor hoverIndex border border-info rounded shadow p-3 mb-5 bg-white rounded">
             <div>
                 <%--<c:if test="${r.type == 'Meeting'}"><img src="../../images/info.png" style="height: 3rem"></c:if>--%>
-                <p style="color: #bdeaea;" class="room" > Room: ${r.name}</p>
+                <p style="color: #bdeaea;" class="room">
+                    <c:if test="${r.type == 'Meeting'}">
+                        <i id="infoId" class="fas fa-info-circle" style="padding-top: 0.5rem; font-size: 1.3em;" onclick="getInfo(${r.id})"></i>
+                    </c:if> Room: ${r.name}
+                </p>
             </div>
 
             <c:if test="${r.type == 'Meeting'}">

@@ -12,6 +12,7 @@ public class Reserve extends AbstractClass
     private String status;
     private int user_id;
     private int room_id;
+    private String room_name;
 
     public Date getDate() {
         return date;
@@ -69,6 +70,14 @@ public class Reserve extends AbstractClass
         this.room_id = room_id;
     }
 
+    public String getRoom_name() {
+        return room_name;
+    }
+
+    public void setRoom_name(String room_name) {
+        this.room_name = room_name;
+    }
+
     @Override
     public String toString() {
         return "Reserve{" +
@@ -79,6 +88,7 @@ public class Reserve extends AbstractClass
                 ", status='" + status + '\'' +
                 ", user_id=" + user_id +
                 ", room_id=" + room_id +
+                ", room_name=" + room_name +
                 '}';
     }
 }
