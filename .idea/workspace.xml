@@ -7,44 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ef81c0-a56a-4863-a8b3-8f11db681b3b" name="Default" comment="final_3">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/infoModalParse.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/model/Reserve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/model/Reserve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/logoutParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/logoutParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/modalParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/modalParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/images/info.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/images/logout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/rooms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/rooms.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/model/Reserve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/model/Reserve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/model/Reserve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/model/Reserve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/logoutParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/logoutParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/modalParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/modalParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/info.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/logout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/rooms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/rooms.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -380,7 +343,7 @@
       <workItem from="1569302650700" duration="4716000" />
       <workItem from="1569308057090" duration="14249000" />
       <workItem from="1569389718709" duration="22848000" />
-      <workItem from="1569479668213" duration="12520000" />
+      <workItem from="1569479668213" duration="13208000" />
     </task>
     <task id="LOCAL-00001" summary="final_3">
       <created>1568980426048</created>
