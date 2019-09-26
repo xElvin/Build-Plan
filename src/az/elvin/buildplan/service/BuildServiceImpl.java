@@ -3,6 +3,7 @@ package az.elvin.buildplan.service;
 import az.elvin.buildplan.dao.BuildDao;
 import az.elvin.buildplan.dao.BuildDaoImpl;
 import az.elvin.buildplan.model.Floor;
+import az.elvin.buildplan.model.Reserve;
 import az.elvin.buildplan.model.Room;
 import az.elvin.buildplan.model.User;
 
@@ -45,5 +46,17 @@ public class BuildServiceImpl implements BuildService
     public void updateUser(int floorId, int roomId, int userId) throws Exception
     {
         buildDao.updateUser(floorId, roomId, userId);
+    }
+
+    @Override
+    public boolean reserve(Reserve r) throws Exception
+    {
+        return buildDao.reserve(r);
+    }
+
+    @Override
+    public List<Reserve> getReserve(int room_id) throws Exception
+    {
+        return buildDao.getReserve(room_id);
     }
 }

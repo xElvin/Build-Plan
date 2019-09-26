@@ -5,6 +5,7 @@ import az.elvin.buildplan.util.DBClose;
 import az.elvin.buildplan.util.DBConnect;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ public class BuildDaoImpl implements BuildDao
         Connection         c = null;
         PreparedStatement ps = null;
         ResultSet         rs = null;
-        String sql = "SELECT r.idroom, r.name, r.floor_id, r.active, f.name FROM buildplandb.room r\n" +
+        String sql = "SELECT r.idroom, r.name, r.type, r.max_person, r.floor_id, r.active, f.name FROM buildplandb.room r\n" +
                     "inner join buildplandb.floor f on f.idfloor = r.floor_id\n" +
                     "where r.floor_id = ? and r.active = 1";
         try
@@ -77,6 +78,8 @@ public class BuildDaoImpl implements BuildDao
                     Room r = new Room();
                     r.setId(rs.getInt("r.idroom"));
                     r.setName(rs.getString("r.name"));
+                    r.setType(rs.getString("r.type"));
+                    r.setMax_person(rs.getInt("r.max_person"));
 
                     Floor f = new Floor();
                     f.setId(rs.getInt("r.floor_id"));
@@ -296,5 +299,82 @@ public class BuildDaoImpl implements BuildDao
         {
             DBClose.dbClose(c, ps, null);
         }
+    }
+
+    @Override
+    public boolean reserve(Reserve r) throws Exception
+    {
+        boolean result = false;
+        Connection         c = null;
+        PreparedStatement ps =null;
+        String sql = "insert into buildplandb.reserve(date, start_time, end_time, person_count, status, user_id, room_id)\n" +
+                     "values(?, ?, ?, ?, 'Reserved', ?, ?)";
+        try {
+            c = DBConnect.getConnection();
+            if (c != null)
+            {
+                ps = c.prepareStatement(sql);
+                ps.setDate(1, new Date(r.getDate().getTime()));
+                ps.setTime(2, r.getStart_time());
+                ps.setTime(3, r.getEnd_time());
+                ps.setInt(4,r.getPerson_count());
+                ps.setInt(5, r.getUser_id());
+                ps.setInt(6, r.getRoom_id());
+                result = ps.execute();
+            }
+            else{
+                System.out.println("Connection is null!");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.dbClose(c, ps, null);
+        }
+        return result;
+    }
+
+    @Override
+    public List<Reserve> getReserve(int room_id) throws Exception
+    {
+        List<Reserve> reserveList = new ArrayList<>();
+        Connection         c = null;
+        PreparedStatement ps = null;
+        ResultSet         rs = null;
+        String sql = "select idreserve, date, start_time, end_time, status, room_id from buildplandb.reserve\n" +
+                     "where room_id = ? and active = 1 ";
+        try
+        {
+            c = DBConnect.getConnection();
+            if (c != null)
+            {
+                ps = c.prepareStatement(sql);
+                ps.setInt(1, room_id);
+                rs = ps.executeQuery();
+
+                while (rs.next())
+                {
+                    Reserve r = new Reserve();
+                    r.setId(rs.getInt("idreserve"));
+                    r.setDate(rs.getDate("date"));
+                    r.setStart_time(rs.getTime("start_time"));
+                    r.setEnd_time(rs.getTime("end_time"));
+                    r.setStatus(rs.getString("status"));
+                    r.setRoom_id(rs.getInt("room_id"));
+
+                    reserveList.add(r);
+                }
+            }
+            else
+            {
+                System.out.println("Connection is null!");
+            }
+        } catch (Exception ex)
+        {
+            ex.printStackTrace();
+        } finally
+        {
+            DBClose.dbClose(c, ps, rs);
+        }
+        return reserveList;
     }
 }

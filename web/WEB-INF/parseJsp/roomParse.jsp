@@ -10,7 +10,17 @@
 <div id="roomParseId" style="margin-top: 2rem; margin-right: 9rem; margin-left: 15rem;">
     <c:forEach items="${rooms}" var="r" varStatus="Count">
         <div id="${r.id}" class="hoverFloor hoverIndex border border-info rounded shadow p-3 mb-5 bg-white rounded">
-            <p style="color: #bdeaea;" class="room">Room: ${r.name}</p>
+            <div>
+                <%--<c:if test="${r.type == 'Meeting'}"><img src="../../images/info.png" style="height: 3rem"></c:if>--%>
+                <p style="color: #bdeaea;" class="room" > Room: ${r.name}</p>
+            </div>
+
+            <c:if test="${r.type == 'Meeting'}">
+                <div style="display: flex; justify-content: center; margin-top: 5rem" >
+                    <input type="button" id="reserveRoomId" value="Reserve" class="btn btn-dark" style=" width: 16rem; height: 5rem;"
+                    onclick="callReserveModal(${r.id}, ${r.max_person})">
+                </div>
+            </c:if>
                 <div style="box-sizing: border-box">
                     <c:forEach items="${users}" var="u" varStatus="Number">
                         <c:if test="${u.room.name == r.name}">

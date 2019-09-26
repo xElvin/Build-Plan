@@ -8,7 +8,7 @@
                                         onclick="Cookies.set('floorId', ${f.id})">
                <p>
                    <br>Mertebe ${f.name}<br> <br>
-                   Otaqlarin sayi: 8 <br>
+                   Otaqlarin sayi: 10 <br>
                </p>
             </div>
         </a>

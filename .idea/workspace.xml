@@ -6,11 +6,70 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6ef81c0-a56a-4863-a8b3-8f11db681b3b" name="Default" comment="final_1">
+    <list default="true" id="f6ef81c0-a56a-4863-a8b3-8f11db681b3b" name="Default" comment="final_3">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/model/Reserve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/logoutParse.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-clockpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap-clockpicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/photo_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/ui-icons_444444_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/ui-icons_555555_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/ui-icons_777620_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/ui-icons_777777_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/login/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/login/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/logout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery/bootstrap-clockpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery/bootstrap-clockpicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Build_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Build_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/dao/BuildDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/login/loginDao/LoginDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/login/loginDao/LoginDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/login/loginModel/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/login/loginModel/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/model/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/model/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/az/elvin/buildplan/service/BuildServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/classes/web/ControllerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/floorParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/floorParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/modalParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/modalParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/jquery/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/jquery/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/rooms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Build_war_exploded/rooms.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/dao/BuildDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/login/loginDao/LoginDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/login/loginDao/LoginDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/login/loginModel/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/login/loginModel/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/model/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/model/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/az/elvin/buildplan/service/BuildServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Build/web/ControllerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/dao/BuildDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/login/loginDao/LoginDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/login/loginDao/LoginDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/login/loginModel/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/login/loginModel/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/model/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/service/BuildServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/elvin/buildplan/util/DBClose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/elvin/buildplan/util/DBClose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/floorParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/floorParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/modalParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/modalParse.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/parseJsp/roomParse.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jquery/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jquery/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/rooms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/rooms.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,27 +98,30 @@
   <component name="ProjectId" id="1QuUllu2gf78Jq6eyPDX5o46VSi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/images" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\web" />
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\src\az\elvin\buildplan" />
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\web\js\jquery" />
-      <recent name="C:\Users\Elvin\IdeaProjects\Build" />
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\web" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\web\js\jquery" />
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\web\META-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="web" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Elvin\IdeaProjects\Build\web\META-INF" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\web\images" />
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\lib" />
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\web" />
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\web\js\jquery" />
+      <recent name="C:\Users\Elvin\IdeaProjects\Build\Build-Plan\web\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,8 +399,22 @@
       <workItem from="1568721183563" duration="16758000" />
       <workItem from="1568785439015" duration="7363000" />
       <workItem from="1568873464722" duration="3113000" />
-      <workItem from="1568961482725" duration="4748000" />
+      <workItem from="1568961482725" duration="5170000" />
+      <workItem from="1568981050308" duration="2739000" />
+      <workItem from="1569222540758" duration="12587000" />
+      <workItem from="1569302650700" duration="4716000" />
+      <workItem from="1569308057090" duration="14249000" />
+      <workItem from="1569389718709" duration="22848000" />
+      <workItem from="1569479668213" duration="5983000" />
     </task>
+    <task id="LOCAL-00001" summary="final_3">
+      <created>1568980426048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568980426048</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +435,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="final_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="final_1" />
+    <MESSAGE value="final_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="final_3" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

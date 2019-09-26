@@ -1,6 +1,7 @@
 package az.elvin.buildplan.service;
 
 import az.elvin.buildplan.model.Floor;
+import az.elvin.buildplan.model.Reserve;
 import az.elvin.buildplan.model.Room;
 import az.elvin.buildplan.model.User;
 
@@ -15,4 +16,7 @@ public interface BuildService
 
     int getUserCount(int roomId) throws Exception;
     void updateUser (int floorId, int roomId, int userId) throws Exception;
+
+    boolean reserve(Reserve r) throws Exception;
+    List<Reserve> getReserve(int room_id) throws Exception;
 }
