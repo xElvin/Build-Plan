@@ -63,7 +63,24 @@ public class BuildServiceImpl implements BuildService
     }
 
     @Override
-    public List<Reserve> getReserves(int user_id, int room_id) throws Exception {
+    public List<Reserve> getReserves(int user_id, int room_id) throws Exception
+    {
         return buildDao.getReserves(user_id, room_id);
+    }
+
+    @Override
+    public void deleteReserve(int reserve_id) throws Exception
+    {
+        buildDao.deleteReserve(reserve_id);
+    }
+
+    @Override
+    public Reserve getReserveById(int reserve_id) throws Exception {
+        return buildDao.getReserveById(reserve_id);
+    }
+
+    @Override
+    public void updateReserve(int reserve_id, Reserve reserve) throws Exception {
+        buildDao.updateReserve(reserve_id, reserve);
     }
 }

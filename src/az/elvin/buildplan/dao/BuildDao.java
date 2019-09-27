@@ -20,4 +20,10 @@ public interface BuildDao
     boolean reserve(Reserve r) throws Exception;
     List<Reserve> getReserve(int room_id) throws Exception;
     List<Reserve> getReserves(int user_id, int room_id) throws Exception;
+
+    void deleteReserve(int reserve_id) throws Exception;
+
+    Reserve getReserveById(int reserve_id) throws Exception;
+
+    void updateReserve(int reserve_id, Reserve reserve) throws Exception;
 }

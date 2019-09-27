@@ -229,6 +229,82 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet
                 address = "WEB-INF/parseJsp/infoModalParse.jsp";
             }
 
+            else if (action.equalsIgnoreCase("deleteReserve"))
+            {
+                int reserve_id = Integer.parseInt(request.getParameter("reserve_id"));
+                service.deleteReserve(reserve_id);
+                address = "rooms.jsp";
+            }
+
+            else if (action.equalsIgnoreCase("editReserve"))
+            {
+                int reserve_id = Integer.parseInt(request.getParameter("reserve_id"));
+                Reserve reserve = service.getReserveById(reserve_id);
+                request.setAttribute("reserve", reserve);
+                address = "WEB-INF/parseJsp/editParse.jsp";
+            }
+
+            else if (action.equalsIgnoreCase("updateReserve"))
+            {
+                String message = "";
+
+                String date = request.getParameter("date");
+                String start_time = request.getParameter("start_time");
+                String end_time = request.getParameter("end_time");
+                String personCount = request.getParameter("person_count");
+
+                int count = 0;
+
+                if (date != null && !date.isEmpty() && start_time != null && !start_time.isEmpty() && end_time != null && !end_time.isEmpty() && personCount != null && !personCount.isEmpty())
+                {
+                    Date date1 = new java.sql.Date(df.parse(date).getTime());
+                    Time start_time1 = new java.sql.Time(dateFormat.parse(start_time).getTime());
+                    Time end_time1 = new java.sql.Time(dateFormat.parse(end_time).getTime());
+
+                    int reserve_id = Integer.parseInt(request.getParameter("reserve_id"));
+
+                    int person_count = Integer.parseInt(personCount);
+
+                    Reserve reserve = new Reserve();
+                    reserve.setDate(date1);
+                    reserve.setStart_time(start_time1);
+                    reserve.setEnd_time(end_time1);
+                    reserve.setPerson_count(person_count);
+
+                    List<Reserve> reserves = service.getReserve(reserve_id);
+                    for (Reserve r : reserves)
+                    {
+                        if (date1.compareTo(r.getDate()) == 0)
+                        {
+                            System.out.println("gunler eynidir");
+                            if (start_time1.compareTo(r.getEnd_time()) > 0 || end_time1.compareTo(r.getStart_time()) < 0)
+                            {
+                                System.out.println("saatlar eyni deyil");
+                            }
+                            else
+                            {
+                                System.out.println("saatlar eynidir");
+                                count++;
+                            }
+                        }
+                    }
+                    if (count == 0)
+                    {
+                        service.updateReserve(reserve_id, reserve);
+
+                        message = "reserved";
+                        response.addHeader("message", message);
+                    }
+                    else
+                    {
+                        message = "not reserved";
+                        response.addHeader("message", message);
+                    }
+                }
+
+                address = "rooms.jsp";
+            }
+
         } catch (Exception exc)
         {
             exc.printStackTrace();

@@ -31,7 +31,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <script>
-      Cookies.set('user_id', ${login.user_id})
+      Cookies.set('user_id', ${login.user_id});
         $(function ()
         {
             $('#FloorDataId').show();

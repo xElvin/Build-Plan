@@ -24,7 +24,9 @@
 
                 <label for="userRoom">Room</label>       <select id="userRoom"  value="${u.room.id}" name="room" class="form-control selectpicker">
                                                             <c:forEach items="${rooms}" var="r">
-                                                                <option ${r.id == u.room.id ? 'selected':''} value="${r.id}">${r.name}</option>
+                                                                <c:if test="${r.type == 'Work'}">
+                                                                    <option ${r.id == u.room.id ? 'selected':''} value="${r.id}">${r.name}</option>
+                                                                </c:if>
                                                             </c:forEach>
                                                          </select>
 

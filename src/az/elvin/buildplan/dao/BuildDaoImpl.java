@@ -333,6 +333,7 @@ public class BuildDaoImpl implements BuildDao
         return result;
     }
 
+    /* get reservation for room */
     @Override
     public List<Reserve> getReserve(int room_id) throws Exception
     {
@@ -378,8 +379,12 @@ public class BuildDaoImpl implements BuildDao
         return reserveList;
     }
 
+
+
+    /* get reservation for room and user */
     @Override
-    public List<Reserve> getReserves(int user_id, int room_id) throws Exception {
+    public List<Reserve> getReserves(int user_id, int room_id) throws Exception
+    {
         List<Reserve> reserveList = new ArrayList<>();
         Connection         c = null;
         PreparedStatement ps = null;
@@ -422,5 +427,102 @@ public class BuildDaoImpl implements BuildDao
             DBClose.dbClose(c, ps, rs);
         }
         return reserveList;
+    }
+
+    @Override
+    public void deleteReserve(int reserve_id) throws Exception {
+        Connection         c = null;
+        PreparedStatement ps =null;
+        String sql = "update buildplandb.reserve set active = 0 \n" +
+                     "where idreserve = ?";
+
+        try {
+            c = DBConnect.getConnection();
+            if (c != null)
+            {
+                ps = c.prepareStatement(sql);
+                ps.setLong(1, reserve_id);
+                ps.execute();
+            }
+            else{
+                System.out.println("Connection is null!");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.dbClose(c, ps, null);
+        }
+    }
+
+    @Override
+    public Reserve getReserveById(int reserve_id) throws Exception
+    {
+        Reserve r = new Reserve();
+        Connection         c = null;
+        PreparedStatement ps = null;
+        ResultSet         rs = null;
+        String sql = "SELECT R.idreserve, R.date, R.start_time, R.end_time, R.person_count, O.name FROM buildplandb.reserve R\n" +
+                    "inner join buildplandb.room O on R.room_id = O.idroom\n" +
+                    "where R.idreserve = ? and R.active = 1";
+        try
+        {
+            c = DBConnect.getConnection();
+            if (c != null)
+            {
+                ps = c.prepareStatement(sql);
+                ps.setInt(1, reserve_id);
+                rs = ps.executeQuery();
+
+                if (rs.next())
+                {
+                    r.setId(rs.getInt("R.idreserve"));
+                    r.setDate(rs.getDate("R.date"));
+                    r.setStart_time(rs.getTime("R.start_time"));
+                    r.setEnd_time(rs.getTime("R.end_time"));
+                    r.setPerson_count(rs.getInt("R.person_count"));
+                    r.setRoom_name(rs.getString("O.name"));
+                }
+            }
+            else
+            {
+                System.out.println("Connection is null!");
+            }
+        } catch (Exception ex)
+        {
+            ex.printStackTrace();
+        } finally
+        {
+            DBClose.dbClose(c, ps, rs);
+        }
+        return r;
+    }
+
+    @Override
+    public void updateReserve(int reserve_id, Reserve reserve) throws Exception
+    {
+        Connection         c = null;
+        PreparedStatement ps =null;
+        String sql = "update buildplandb.reserve set date = ?, start_time = ?, end_time = ?, person_count = ? \n" +
+                     "where idreserve = ? ";
+        try {
+            c = DBConnect.getConnection();
+            if (c != null)
+            {
+                ps = c.prepareStatement(sql);
+                ps.setDate(1, new Date(reserve.getDate().getTime()));
+                ps.setTime(2, reserve.getStart_time());
+                ps.setTime(3, reserve.getEnd_time());
+                ps.setInt(4,  reserve.getPerson_count());
+                ps.setInt(5,  reserve_id);
+                ps.execute();
+            }
+            else{
+                System.out.println("Connection is null!");
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.dbClose(c, ps, null);
+        }
     }
 }

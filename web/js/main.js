@@ -1,5 +1,6 @@
 var globRoomId = '';
 var globPersonCount = '';
+var globReserveId = '';
 
 function callModal(userId, floorId)
 {
@@ -18,13 +19,23 @@ function callReserveModal(roomId, personCount)
 
 $(function ()
 {
-    $('#SelectDay').datepicker({
+    $('.datepicker').datepicker({
         format: 'yyyy-mm-dd'
     });
-
+    var minutes = ["00","10", "20", "30", "40", "50"];
+    var hours = ["9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"];
     $('.timepicker').clockpicker({
         autoclose: true,
         twelvehour: false,
+        afterShow: function() {
+            $('.clockpicker-hours').find('.clockpicker-tick').filter(function (index, element)
+            {
+                return !($.inArray($(element).text(), hours) != -1)
+            }).remove();
+            $(".clockpicker-minutes").find(".clockpicker-tick").filter(function(index,element){
+                return !($.inArray($(element).text(), minutes) != -1)
+            }).remove();
+        },
         default: DisplayCurrentTime()
     }).find('input').val(DisplayCurrentTime())
 });
@@ -51,7 +62,6 @@ function reserve()
     var person_count = $('#PersonCount').val();
     var room_id    = globRoomId;
     var user_id    = Cookies.get('user_id');
-    //alert(person_count+' globco='+globPersonCount);
 
     if (date != '' && date != null && start_time != '' && start_time != null && end_time != '' && end_time != null && person_count > 0)
     {
@@ -245,7 +255,6 @@ function updateUser(userId)
     var floorId = $('#userFloor').val();
     var roomId  = $('#userRoom').val();
 
-    //alert('flo='+floorId+' rom='+roomId+' user='+userId);
     $.ajax({
         url: "cs?action=updateUser",
         type: 'POST',
@@ -272,4 +281,80 @@ function updateUser(userId)
             alert('Have an error!');
         }
     })
+}
+
+
+
+function editReserve(reserve_id)
+{
+    globReserveId = reserve_id;
+    $.ajax({
+        type: 'GET',
+        url: 'cs?action=editReserve',
+        data: 'reserve_id='+reserve_id,
+        dataType: 'html',
+        success: function (data)
+        {
+            $('#infoModalId').modal('toggle');
+            $('#updateModal').modal('show');
+            $('#updateModal').html(data);
+        },
+        error: function () {
+            alert('Have a error!')
+        }
+    })
+}
+
+
+function updateReserve()
+{
+    var date         = $('#SelectDayU').val();
+    var start_time   = $('#SelectStartTimeU').val();
+    var end_time     = $('#SelectEndTimeU').val();
+    var person_count = $('#PersonCountU').val();
+    $.ajax({
+        type: 'POST',
+        url: 'cs?action=updateReserve',
+        data: 'date='+date+'&start_time='+start_time+'&end_time='+end_time+
+              '&person_count='+person_count+'&reserve_id='+globReserveId,
+
+        success: function (data, status, xhr)
+        {
+            var message = xhr.getResponseHeader('message');
+
+            if (message == "reserved")
+            {
+                alert('Reservation updated!');
+                $('#updateModal').modal('toggle');
+            }
+            else if (message == "not reserved")
+            {
+                alert("The room was reserved for this time. Please, choose other time!")
+            }
+        },
+        error: function () {
+            alert('Have an error!')
+        }
+    })
+}
+
+
+function deleteReserve(reserve_id)
+{
+    var answer = confirm('Are you sure you want to delete the reservation?');
+    if(answer)
+    {
+        $.ajax({
+            type: 'POST',
+            url: 'cs?action=deleteReserve',
+            data: 'reserve_id='+reserve_id,
+            complete: function () {
+                alert('Reservation deleted');
+                $('#infoModalId').modal('toggle');
+            },
+            error: function () {
+                alert('Have a error!');
+            }
+        })
+    }
 }

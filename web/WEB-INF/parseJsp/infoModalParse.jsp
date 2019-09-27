@@ -27,6 +27,8 @@
                         <th scope="col">End time</th>
                         <th scope="col">Person count</th>
                         <th scope="col">Room's name</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
                     </tr>
                     </thead>
 
@@ -40,6 +42,8 @@
                             <td>${r.end_time}</td>
                             <td>${r.person_count}</td>
                             <td>${r.room_name}</td>
+                            <td><a href="javascript: editReserve(${r.id})">Edit</a></td>
+                            <td><a href="javascript: deleteReserve(${r.id})">Delete</a></td>
                         </tr>
                     </c:forEach>
                     </tbody>

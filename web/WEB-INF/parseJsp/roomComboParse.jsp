@@ -9,5 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <c:forEach items="${rooms}" var="r">
-    <option value="${r.id}">${r.name}</option>
+    <c:if test="${r.type == 'Work'}">
+        <option value="${r.id}">${r.name}</option>
+    </c:if>
 </c:forEach>
