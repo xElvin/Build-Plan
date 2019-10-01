@@ -166,7 +166,9 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet
                     Time start_time1 = new java.sql.Time(dateFormat.parse(start_time).getTime());
                     Time end_time1 = new java.sql.Time(dateFormat.parse(end_time).getTime());
 
-                    int person_count = Integer.parseInt(personCount);
+                    double person_countD = Double.parseDouble(personCount);
+                    int person_count = (int) person_countD;
+
                     int room_id = Integer.parseInt(roomId);
                     int user_id = Integer.parseInt(userId);
 
@@ -263,7 +265,8 @@ public class ControllerServlet extends javax.servlet.http.HttpServlet
 
                     int reserve_id = Integer.parseInt(request.getParameter("reserve_id"));
 
-                    int person_count = Integer.parseInt(personCount);
+                    double person_countD = Double.parseDouble(personCount);
+                    int person_count = (int) person_countD;
 
                     Reserve reserve = new Reserve();
                     reserve.setDate(date1);

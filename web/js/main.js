@@ -296,8 +296,8 @@ function editReserve(reserve_id)
         success: function (data)
         {
             $('#infoModalId').modal('toggle');
-            $('#updateModal').modal('show');
-            $('#updateModal').html(data);
+            $('#updateReserveModal').modal('show');
+            $('#updateReserveModal').html(data);
         },
         error: function () {
             alert('Have a error!')
@@ -325,7 +325,7 @@ function updateReserve()
             if (message == "reserved")
             {
                 alert('Reservation updated!');
-                $('#updateModal').modal('toggle');
+                $('#updateReserveModal').modal('toggle');
             }
             else if (message == "not reserved")
             {

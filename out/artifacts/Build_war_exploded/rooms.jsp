@@ -62,7 +62,7 @@
                     <label for="SelectDay">Select Day</label>               <input type="text" id="SelectDay"       <%--value="${reserve.date}"--%> class="datepicker form-control"  placeholder="Select Day">
                     <label for="SelectStartTime">Select Start Clock</label> <input type="text" id="SelectStartTime" <%--value="${reserve.start_time}"--%> class="timepicker form-control" <%--data-format="hh:mm:ss"--%> type="text" placeholder="Select start clock">
                     <label for="SelectEndTime">Select End Clock</label>     <input type="text" id="SelectEndTime"   <%--value="${reserve.end_time}"--%> class="timepicker form-control" <%--data-format="hh:mm:ss"--%> type="text" placeholder="Select end clock">
-                    <label for="PersonCount">Person count</label>           <input disabled="disabled" step="1" data-step-max="10" type="number" id="PersonCount" <%--value="${reserve.person_count}"--%> data-decimals="0" min="0" max="20" class="form-control" placeholder="Enter person count"/>
+                    <label for="PersonCount">Person count</label>           <input step="1" data-step-max="10" type="number" id="PersonCount" <%--value="${reserve.person_count}"--%> data-decimals="0" min="0" max="20" class="form-control" placeholder="Enter person count"/>
                 </form>
             </div>
             <div class="modal-footer">
@@ -79,7 +79,7 @@
 </div>
 
 
-<div class="modal fade" id="updateModal" role="dialog" style="display: none;" data-backdrop="static" data-keyboard="false">
+<div class="modal fade" id="updateReserveModal" role="dialog" style="display: none;" data-backdrop="static" data-keyboard="false">
 
 </div>
 

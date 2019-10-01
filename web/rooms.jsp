@@ -79,7 +79,7 @@
 </div>
 
 
-<div class="modal fade" id="updateModal" role="dialog" style="display: none;" data-backdrop="static" data-keyboard="false">
+<div class="modal fade" id="updateReserveModal" role="dialog" style="display: none;" data-backdrop="static" data-keyboard="false">
 
 </div>
 

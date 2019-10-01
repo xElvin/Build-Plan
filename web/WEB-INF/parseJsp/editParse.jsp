@@ -7,6 +7,31 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<script>
+    $(function ()
+    {
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd'
+        });
+        var minutes = ["00","10", "20", "30", "40", "50"];
+        var hours = ["9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"];
+        $('.timepicker').clockpicker({
+            autoclose: true,
+            twelvehour: false,
+            afterShow: function() {
+                $('.clockpicker-hours').find('.clockpicker-tick').filter(function (index, element)
+                {
+                    return !($.inArray($(element).text(), hours) != -1)
+                }).remove();
+                $(".clockpicker-minutes").find(".clockpicker-tick").filter(function(index,element){
+                    return !($.inArray($(element).text(), minutes) != -1)
+                }).remove();
+            },
+            default: DisplayCurrentTime()
+        }).find('input').val(DisplayCurrentTime())
+    });
+</script>
+
 <div class="modal-dialog" style="width: 40rem; ">
     <div class="modal-content" style="height: 40rem">
         <div class="modal-header">
